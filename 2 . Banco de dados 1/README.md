@@ -27,4 +27,4 @@ pode ser usado SGBD como um MongoDB.
 
 ### Modelo conceitual
 
-- Finalidade de <style="color:red"> capturar os requisitos de informação e regras de negócio</> sob o ponto de vista do negócio.
+- Finalidade de <p style="color:red"> capturar os requisitos de informação e regras de negócio</p> sob o ponto de vista do negócio.
