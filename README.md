@@ -6,5 +6,5 @@ Repositorio criado para apresentar projetos e Anotações criados durante o curs
 
 2. Banco de dados 1
 
-![passos para modelagem de dados!](C:\Pessoal\Projetos\IPOG\Banco de dados 1\Passo para Modelagem de dados.png)
+![passos para modelagem de dados!](\IPOG\Banco de dados 1\Passo para Modelagem de dados.png)
 
