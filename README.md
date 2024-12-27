@@ -6,5 +6,5 @@ Repositorio criado para apresentar projetos e Anotações criados durante o curs
 
 2. Banco de dados 1
 
-![passos para modelagem de dados!](/IPOG/Banco_de_dados_1/Passo_para_Modelagem_de_dados.png)
+![passos para modelagem de dados!](https://drive.google.com/file/d/156GfVmZwX02dqkhnctLhMq2PgiS98I8-/view?usp=sharing)
 
