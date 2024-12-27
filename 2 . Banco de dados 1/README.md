@@ -19,12 +19,10 @@ pode ser usado SGBD como um MongoDB.
 
 ## O que e um modelo?
 
-![o que e modelar dados?](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/o%20que%20e%20modelar%20dados.png)
-
 **Modelar** significa criar um modleo que explique as características de funcionamento e comportamento de algo.
 
-![o que e modelar dados]()
+![o que e modelar dados?](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/o%20que%20e%20modelar%20dados.png)
 
 ### Modelo conceitual
 
-- Finalidade de <p style="color:red"> capturar os requisitos de informação e regras de negócio</p> sob o ponto de vista do negócio.
+- Finalidade de <font color="red"> capturar os requisitos de informação e regras de negócio</font> sob o ponto de vista do negócio.
