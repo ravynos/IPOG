@@ -6,8 +6,7 @@ Repositorio criado para apresentar projetos e Anotações criados durante o curs
 
 2. Banco de dados 1
 
-![passos para modelagem de dados!](https://github.com/ravynos/IPOG/blob/main/Banco%20de%20dados%201/Passo%20para%20Modelagem%20de%20dados.png?raw=true)
-
+![passos para modelagem de dados!](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/Passo%20para%20Modelagem%20de%20dados.png)
 
 1. Análise de requisitos: Momento onde você realizará perguntas ao seu cliente, do que ele precisa armazenar no banco de dados.
 
@@ -20,10 +19,12 @@ pode ser usado SGBD como um MongoDB.
 
 ## O que e um modelo?
 
+![o que e modelar dados?](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/o%20que%20e%20modelar%20dados.png)
+
 **Modelar** significa criar um modleo que explique as características de funcionamento e comportamento de algo.
 
 ![o que e modelar dados]()
 
 ### Modelo conceitual
 
-- Finalidade de <style="color:red" capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio./>
+- Finalidade de <style="color:red"> capturar os requisitos de informação e regras de negócio</> sob o ponto de vista do negócio.
