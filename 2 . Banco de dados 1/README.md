@@ -31,7 +31,7 @@ pode ser usado SGBD como um MongoDB.
 - Descreve quais dados deverão ser armazenados de banco no dados.
 - Não menciona como estes mesmos dados serão armazenados em nível de software. (SGBD)
 
-![modelo conceitual]()
+![modelo conceitual](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/modelo%20conceitual.png)
 
 **<ins>Modelo entidade-relacionamento</ins>**  **MER**
 
@@ -39,7 +39,7 @@ pode ser usado SGBD como um MongoDB.
 - É representado graficamente por meio do uso do diagrama de entidade e relacionamento (DER), conforme representada na figura abaixo.
 
 
-![diagrama entidade-relacionamento]()
+![diagrama entidade-relacionamento](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/der.png)
 
 Alguns elementos presentes em um DER são:
 
@@ -48,7 +48,7 @@ Alguns elementos presentes em um DER são:
 		- Pode ser representar tanto objetos concretos quanto abstratos.
 			ex.: Produtos, vendas, fornecedores, contas correntes, agências, automóveis.
 	- Em um DER, uma entidade é representada por um retângulo.
-	![entidades]()
+	![entidades](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/entidades.png)
 - Atributos
 	- Uma propriedade(característica) de uma entidade é o atributo.
 	- Atributo é o dado que é associado a cada ocorrência de uma entidade.
@@ -67,10 +67,10 @@ Alguns elementos presentes em um DER são:
 		- Atributo compostos
 			- É um tipo de atributo que pode ser dividido em partes menores ou componentes.
 			- Por exemplo, considere uma entidade "Endereço" em um banco de dados de uma empresa. O atributo "Endereço" pode ser composto por vários sub-atributos, como "Rua", "Número", "Cidade", "Estado" e "CEP".
-	![Atributos]()
+	![Atributos ](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/atributos.png)
 - Relacionamentos
 
-![der detalhado]()
+![der detalhado](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/der%20detalhado.png)
 
 <ins>Software para criar modelos conceituais</ins>
 
