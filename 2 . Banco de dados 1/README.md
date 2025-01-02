@@ -88,7 +88,7 @@ Alguns elementos presentes em um DER são:
 
 Abaixo foi feito um modelo corrigido, e melhorado dos relacionamentos da imagem acima usando a ferramenta BRModelos.
 
-![relacionamento vendas melhorado](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/relacionamento%vendas%melhorado.png)
+![relacionamento vendas melhorado](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/relacionamento%20vendas%20melhorado.png)
 
 Link para o modelo criado.
 (https://app.brmodeloweb.com/#!/publicview/67768aff5ca14bc262ca29ee)
@@ -99,7 +99,7 @@ Número (mínimo e máximo) de ocorrências de entidade associadas a uma ocorrê
 
 ![cardinalidade](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/cardinalidade.png)
 
-![cardinalidade explicada](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/Cardinalidade%detalhes.png)
+![cardinalidade detalhes](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/Cardinalidade%20detalhes.png)
 
 No exemplo acima, temos o relacionamento entre empregado e lotação (1,n) onde diz que o empregado tem que ter no mínimo 1 departamento e no máximo muitos, e entre departamento e lotação(1,1), diz que o departamento pode ter no mínimo 1 empregado, e no máximo 1 empregado.
 
@@ -109,7 +109,7 @@ O primeiro valor do par ordenado é o mínimo e o segundo o máximo (mínimo, m�
 - (1,1): No mínimo 1 e no máximo 1.
 - (0,n): No mínimo 0 e no máximo muitos.
 - (1,n): No mínimo 1 e no máximo muitos.
-- (,n): No mínimo muitos e no máximo muitos.
+- (git ,n): No mínimo muitos e no máximo muitos.
 
 Os valores máximo e mínimo, representados por n, poderiam ser trocados por outros valores fixo, por exemplo (1,2) no mínimo 1 e no máximo 2.
 
