@@ -74,6 +74,7 @@ Alguns elementos presentes em um DER são:
 
 <ins>Software para criar modelos conceituais</ins>
 
+
 (https://www.brmodeloweb.com/lang/pt-br/index.html)
 
 ## Relacionamento e Cardinalidade
@@ -88,3 +89,5 @@ Alguns elementos presentes em um DER são:
 Abaixo foi feito um modelo corrigido, e melhorado dos relacionamentos da imagem acima usando a ferramenta BRModelos.
 
 ![modelo vendas](https://app.brmodeloweb.com/#!/publicview/67768aff5ca14bc262ca29ee)
+
+
