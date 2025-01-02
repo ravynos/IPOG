@@ -84,10 +84,44 @@ Alguns elementos presentes em um DER são:
 - Conjunto de associações entre ocorrências de entidades.
 - É representado por um losango, ligado por linhas aos retângulos representativos das entidades que participam do relacionamento.
 
-![relacionamento]()
+![relacionamento](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/relacionamento.png)
 
 Abaixo foi feito um modelo corrigido, e melhorado dos relacionamentos da imagem acima usando a ferramenta BRModelos.
 
-![modelo vendas](https://app.brmodeloweb.com/#!/publicview/67768aff5ca14bc262ca29ee)
+![relacionamento vendas melhorado](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/relacionamento%vendas%melhorado.png)
 
+Link para o modelo criado.
+(https://app.brmodeloweb.com/#!/publicview/67768aff5ca14bc262ca29ee)
 
+## Cardinalidade
+
+Número (mínimo e máximo) de ocorrências de entidade associadas a uma ocorrência da outra entidade.
+
+![cardinalidade](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/cardinalidade.png)
+
+![cardinalidade explicada](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/Cardinalidade%detalhes.png)
+
+No exemplo acima, temos o relacionamento entre empregado e lotação (1,n) onde diz que o empregado tem que ter no mínimo 1 departamento e no máximo muitos, e entre departamento e lotação(1,1), diz que o departamento pode ter no mínimo 1 empregado, e no máximo 1 empregado.
+
+## Tipos de cardinalidade
+
+O primeiro valor do par ordenado é o mínimo e o segundo o máximo (mínimo, máximo):
+- (1,1): No mínimo 1 e no máximo 1.
+- (0,n): No mínimo 0 e no máximo muitos.
+- (1,n): No mínimo 1 e no máximo muitos.
+- (,n): No mínimo muitos e no máximo muitos.
+
+Os valores máximo e mínimo, representados por n, poderiam ser trocados por outros valores fixo, por exemplo (1,2) no mínimo 1 e no máximo 2.
+
+### Prática
+** Desenvolva o Diagrama Entidade-relacionamento (Der) Para as seguintes situações:** 
+- Um aluno realiza vários trabalhos. Um trabalho é realizado por um ou mais alunos.
+![pratica-aluno](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-aluno.png)
+- Um diretor dirige no máximo um departamento. Um departamento tem no máximo um diretor.
+	![pratica-diretor](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-diretor.png)
+- Um autor escreve vários livros. Um livro pode ser escrito por vários autores.
+![pratica-autor](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-autor.png)
+- Uma equipe é composta por vários jogadores. um jogador joga apenas uma equipe.
+![pratica-equipe](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-equipe.png))
+- Uma cliente realiza várias encomendas. Uma encomenda diz respeito a apenas a um cliente.
+![pratica-cliente](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-cliente.png))
