@@ -109,19 +109,59 @@ O primeiro valor do par ordenado é o mínimo e o segundo o máximo (mínimo, m�
 - (1,1): No mínimo 1 e no máximo 1.
 - (0,n): No mínimo 0 e no máximo muitos.
 - (1,n): No mínimo 1 e no máximo muitos.
-- (git ,n): No mínimo muitos e no máximo muitos.
+- (n ,n): No mínimo muitos e no máximo muitos.
 
 Os valores máximo e mínimo, representados por n, poderiam ser trocados por outros valores fixo, por exemplo (1,2) no mínimo 1 e no máximo 2.
 
-### Prática
+### Prática - Aula 05
 ** Desenvolva o Diagrama Entidade-relacionamento (Der) Para as seguintes situações:** 
-- Um aluno realiza vários trabalhos. Um trabalho é realizado por um ou mais alunos.
+1. Um aluno realiza vários trabalhos. Um trabalho é realizado por um ou mais alunos.
 ![pratica-aluno](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-aluno.png)
-- Um diretor dirige no máximo um departamento. Um departamento tem no máximo um diretor.
+2.  Um diretor dirige no máximo um departamento. Um departamento tem no máximo um diretor.
 	![pratica-diretor](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-diretor.png)
-- Um autor escreve vários livros. Um livro pode ser escrito por vários autores.
+3. Um autor escreve vários livros. Um livro pode ser escrito por vários autores.
 ![pratica-autor](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-autor.png)
-- Uma equipe é composta por vários jogadores. um jogador joga apenas uma equipe.
-![pratica-equipe](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-equipe.png))
-- Uma cliente realiza várias encomendas. Uma encomenda diz respeito a apenas a um cliente.
-![pratica-cliente](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-cliente.png))
+4. Uma equipe é composta por vários jogadores. um jogador joga apenas uma equipe.
+![pratica-equipe](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-equipe.png)
+5. Uma cliente realiza várias encomendas. Uma encomenda diz respeito a apenas a um cliente.
+![pratica-cliente](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-cliente.png)
+
+Modelo criado usando BRModelos:
+(https://app.brmodeloweb.com/#!/publicview/6776cf195ca14bc262ca2b22)
+
+### Prática - Aula 06
+
+1. Um berçário deseja informatizar suas operações. Quando um bebê nasce, algumas informações são armazenadas sobre ele, tais como:
+		Nome
+		Data de nascimento
+		Peso do nascimento
+		altura
+	Para as mães dos bebês, o berçário também deseja manter um controle, guardando informações como:
+		Nome
+		Endereço
+		Telefone
+		Data de nascimento
+	Para os médicos que fazem o parto, é importante saber:
+		CRM
+		Nome
+		Especialidade
+
+![pratica-bercario](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-bercario.png)
+
+(https://app.brmodeloweb.com/#!/publicview/6776dab15ca14bc262ca2b8b)
+
+2. Uma turma tem vários professores, sendo que um professor pode ministrar aulas em mais de uma turma. Uma turma tem sempre aulas na mesma sala, mas uma sala pode estar associada a várias turmas(com horários diferentes). Um aluno pode estar matriculado em várias turmas.
+
+![pratica-escola](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-escola.png)
+
+(https://app.brmodeloweb.com/#!/publicview/6776de8f5ca14bc262ca2b9b)
+
+3. A partir do cenário abaixo, identifique as entidades, atributo e relacionamento.
+Você foi selecionado para propor um banco de dados para uma companhia rodoviária que deseja, nesse momento, registrar informações sobre viagens e clientes. 
+Um cliente ao chegar no terminal da companhia solicita a compra de um ou mais bilhetes. Para casa viagem realizada pela companhia você precisa armazenar, além dos dados do motorista que realizou a viagem, o código de identificação da viagem, a data e hora de partida e de chegada, a origem, o destino da viagem.
+Para cliente devem ser registrados o nome, o número da identidade, telefone(pode adicionar mais de um telefone), endereço dos clientes que estavam presentes. O endereço do cliente tem rua, complemento e cep. No bilhete devem constar o número da poltrona que o cliente estava sentado e a quantidade de bagagens que ele despachou. Para os motoristas armazenam-se o nome do motorista, a carteira nacional de habilitação (CNH), data de validade da CNH;
+Cada viagem é feita por um único motorista.
+
+![pratica-companhia](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-companhia.png)
+
+(https://app.brmodeloweb.com/#!/publicview/6776ef61b28a363a9780d8ea)
