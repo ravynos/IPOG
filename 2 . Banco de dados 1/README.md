@@ -180,7 +180,7 @@ Cada viagem é feita por um único motorista.
 - Ao cabeçalho de cada coluna dá-se o nome de atributo ou campos.
 - O conjunto de valores que aparecer em cada coluna é chamado de domínio.
 
-![conceito_modelo_logico](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/conceito_modelo_logico.png)
+![conceito_modelo_logico](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/tabela_modelo_logico.png)
 
 ### Esquema de uma tabela (relação)
 
@@ -235,11 +235,11 @@ mat_vendedor referencia VENDEDORES
 - Depende de outra entidade (chamada de entidade forte) para obter identificação
 - Não possui uma chave primária única por si só.
 
-![entidade_fraca](entidade_fraca.png)
+![entidade_fraca](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/entidade_fraca.png)
 
 ### Etapas do mapeamento: Etapa 2
 
-![mapeamento_chave_fraca](mapeamento_chave_fraca.png)
+![mapeamento_chave_fraca](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/mapeamento_chave_fraca.png)
 
 - Para cada entidade fraca F cria-se uma relação R formada por todos os atributos simples do conjunto entidade fraca.
 - Inclua como atributo de chave estrangeira de R o atributo de chave primária da relação a qual F é dependente.
