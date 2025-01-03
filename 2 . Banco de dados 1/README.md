@@ -165,3 +165,20 @@ Cada viagem é feita por um único motorista.
 ![pratica-companhia](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica-companhia.png)
 
 (https://app.brmodeloweb.com/#!/publicview/6776ef61b28a363a9780d8ea)
+
+## Modelo Lógico
+
+- Descreve como os dados serão organizados e relacionados dentro do banco de dados.
+- Geralmente usando conceitos de tabela (relação), coluna e os relacionamentos entre tabelas.
+- É criado a partir do modelo conceitual.
+
+![tabela do modelo lógico](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/tabela_mode_logico.png)
+
+### Conceitos do modelo lógico (relacional)
+
+- As linhas de uma relação (tabela) são chamadas de tuplas.
+- Ao cabeçalho de cada coluna dá-se o nome de atributo ou campos.
+- O conjunto de valores que aparecer em cada coluna é chamado de domínio.
+
+![conceito_modelo_logico](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/conceito_modelo_logico.png)
+
