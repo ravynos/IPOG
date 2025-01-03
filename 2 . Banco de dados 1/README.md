@@ -182,3 +182,71 @@ Cada viagem é feita por um único motorista.
 
 ![conceito_modelo_logico](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/conceito_modelo_logico.png)
 
+### Esquema de uma tabela (relação)
+
+- Em um modelo lógico, descreve uma tabela (relação).
+	- R(A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub>), onde:
+	- A<sub>i</sub>: Nome de um atributo
+	- N: Grau de relação (número de atributos que seu esquema contém)
+Exemplo:
+	- Estudante (nome, <ins>matrícula</ins>, telefone, endereço)
+
+![esquema_tabela](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/esquema_tabela.png)
+
+### Conceitos de chave
+
+- **Chave primária: é a *chave candidata* que é *escolhida pelo projetista* para identificar tuplas dentro de um conjunto de tuplas *de maneira unívoca uma tupla* em um conjunto de tuplas.
+- No modelo lógico, convenciona-se sublinhar os atributos que compõem a chave primária.
+![esquema_tabela](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/esquema_tabela.png)
+
+### Etapas do mapeamento: Etapa 1
+
+![modelo_mapeamento](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/modelo_mapeamento.png)
+
+R(A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub>),
+Se vários atributos-chave são identificados para R durante o projeto conceitual, cada chave e adicional é mantida a fim de especificar chaves secundárias (únicas) da relação R
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao}
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao}
+
+### Conceitos de chave estrangeira
+
+- Estabelece uma relação entre 2 tabelas.
+	- Referencia uma chave de uma tabela (tabela pai) em outra tabela (tabela filho).
+- Garante que os valores na coluna de chave estrangeira só possam aparecer se já existem na coluna correspondente na tabela referenciada (a tabela pai).
+
+![modelo_conceitual_chave_estrangeira](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/modelo_conceitual_chave_estrangeira.png)
+
+![tabela_chave_estrangeira](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/tabela_chave_estrangeira.png)
+
+Modelo Lógico (relacional)
+
+CLIENTES (<ins>codigo</ins>, nome, idade, endereco, telefone)
+VENDEDORES (<ins>matricula</ins>, nome, telefone)
+VENDAS (<ins>id</ins>, <ins>codigo_cliente</ins>, <ins>mat_vendedor</ins>, valor)
+
+codigo_cliente refencia CLIENTES
+
+mat_vendedor referencia VENDEDORES
+
+### Entidade Fraca
+
+- Depende de outra entidade (chamada de entidade forte) para obter identificação
+- Não possui uma chave primária única por si só.
+
+![entidade_fraca](entidade_fraca.png)
+
+### Etapas do mapeamento: Etapa 2
+
+![mapeamento_chave_fraca](mapeamento_chave_fraca.png)
+
+- Para cada entidade fraca F cria-se uma relação R formada por todos os atributos simples do conjunto entidade fraca.
+- Inclua como atributo de chave estrangeira de R o atributo de chave primária da relação a qual F é dependente.
+- A chave primária de R é a combinação da chave primária e a chave parcial do tipo de entidade fraca F.
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}
+*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, dtAniversario, parentesco}*
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao}
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao}
+
