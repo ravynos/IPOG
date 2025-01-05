@@ -251,3 +251,74 @@ Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao}  
 Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao}  
 
+### Etapa do mapeamento de dados: Etapa 3
+
+- Para cada tipo de relacionamento binário 1:1 R
+	- identifique as relações S e T que correspondem aos tipos de entidades participantes de R
+- **Inclua a chave estrangeira em T**
+- __Inclua o atributo do relacionamento em T__
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}  
+*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
+			cpf referencia Empregado
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
+		numeroDep referencia Departamento
+
+![mapeamento_etapa3](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/mapeamento_etapa3.png)
+
+### Etapas do mapeamento: Etapa 4
+
+Para cada conjunto de relacionamento de cardinalidade 1 para N, a chave primária da entidade que participa com cardinalidade N terá a chave primária da outra entidade como chave estrangeira, bem como os atributos do relacionamento.
+
+![mapeamento_etapa4.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/mapeamento_etapa4.png)
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
+			numeroDep referencia Deparatamento
+			numeroSupervisor referencia Empregado
+*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
+			cpf referencia Empregado
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
+		numeroDep referencia Departamento
+
+### Etapas do mapeamento: Etapa 5
+
+- Para cada relacionamento binário N:N cria-se uma nova relação, com as chaves das entidades relacionadas.
+- a combinação das chaves estrangeiras formará a chaves primária da nova relação
+- Inclua também quaisquer atributo simples do tipo de relacionamento N:N como atributos da nova relação
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
+			numeroDep referencia Deparatamento
+			numeroSupervisor referencia Empregado
+*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
+			cpf referencia Empregado
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
+		numeroDep referencia Departamento
+Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}
+		cpf referencia Empregado
+		numero referencia Projeto
+
+### Etapas do mapeamento: Etapa 6
+
+Existe duas maneiras de tratar atributos multivalorados no mapeamento:
+- Sabendo uma estimativa de números de ocorrências do atributo. Assim, pode-se adicionar a relação quantos atributos forem necessários.
+
+| Departamento = {<ins>numero</ins>, nome numero, dataIni, local1, local2, local3}|
+
+- Caso de números de ocorrências do atributo seja identificado, cria-se uma nova relação. Essa relação R incluirá um atributo correspondente a atributo multivalorado A, mais atributo de chave primária como uma chave estrangeira em R. A chave primária de R é a combinação de ambo.
+
+Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
+			numeroDep referencia Deparatamento
+			numeroSupervisor referencia Empregado
+*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
+			cpf referencia Empregado
+Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
+		numeroDep referencia Departamento
+Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}
+		cpf referencia Empregado
+		numero referencia Projeto
+LocalDep = {<ins>numero</ins>, <ins>localizacao</ins>}
+		numero referencia Departamento
