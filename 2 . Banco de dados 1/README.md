@@ -275,12 +275,12 @@ Para cada conjunto de relacionamento de cardinalidade 1 para N, a chave primári
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
 			***numeroDep referencia Deparatamento***  
-			***numeroSupervisor referencia Empregado***
+			***numeroSupervisor referencia Empregado***  
 *Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
-			***cpf referencia Empregado***
+			***cpf referencia Empregado***  
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
-Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
-		***numeroDep referencia Departamento***
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}  
+		***numeroDep referencia Departamento***  
 
 ### Etapas do mapeamento: Etapa 5
 
