@@ -247,7 +247,7 @@ mat_vendedor referencia VENDEDORES
 - A chave primária de R é a combinação da chave primária e a chave parcial do tipo de entidade fraca F.
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}  
-*Dependente = {<ins>cpf</ins>, <ins>nome</ins>, dtAniversario, parentesco}*  
+Dependente = {<ins>cpf</ins>, <ins>nome</ins>, dtAniversario, parentesco}  
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao}  
 Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao}  
 
@@ -260,10 +260,10 @@ Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao}
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario}  
 *Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
-			cpf referencia Empregado
+		***cpf referencia Empregado***
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
 Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
-		numeroDep referencia Departamento
+		***numeroDep referencia Departamento***
 
 ![mapeamento_etapa3](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/mapeamento_etapa3.png)
 
@@ -274,13 +274,13 @@ Para cada conjunto de relacionamento de cardinalidade 1 para N, a chave primári
 ![mapeamento_etapa4.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/mapeamento_etapa4.png)
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
-			numeroDep referencia Deparatamento
-			numeroSupervisor referencia Empregado
+			***numeroDep referencia Deparatamento***  
+			***numeroSupervisor referencia Empregado***
 *Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
-			cpf referencia Empregado
+			***cpf referencia Empregado***
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
 Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
-		numeroDep referencia Departamento
+		***numeroDep referencia Departamento***
 
 ### Etapas do mapeamento: Etapa 5
 
@@ -289,16 +289,16 @@ Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
 - Inclua também quaisquer atributo simples do tipo de relacionamento N:N como atributos da nova relação
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
-			numeroDep referencia Deparatamento
-			numeroSupervisor referencia Empregado
+			***numeroDep referencia Deparatamento***  
+			***numeroSupervisor referencia Empregado***    
 *Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
-			cpf referencia Empregado
+			***cpf referencia Empregado***  
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
-Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
-		numeroDep referencia Departamento
-Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}
-		cpf referencia Empregado
-		numero referencia Projeto
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}  
+		***numeroDep referencia Departamento***  
+Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}  
+		***cpf referencia Empregado***  
+		***numero referencia Projeto***  
 
 ### Etapas do mapeamento: Etapa 6
 
@@ -310,15 +310,15 @@ Existe duas maneiras de tratar atributos multivalorados no mapeamento:
 - Caso de números de ocorrências do atributo seja identificado, cria-se uma nova relação. Essa relação R incluirá um atributo correspondente a atributo multivalorado A, mais atributo de chave primária como uma chave estrangeira em R. A chave primária de R é a combinação de ambo.
 
 Empregado = {<ins>cpf</ins>, nome, sobrenome, idade, endereço, sexo, salario, numeroDep, numeroSupervidor}  
-			numeroDep referencia Deparatamento
-			numeroSupervisor referencia Empregado
+			***numeroDep referencia Deparatamento***  
+			***numeroSupervisor referencia Empregado***  
 *Dependente = {<ins>cpf</ins>, <ins>nome</ins>, sexo, dtAniversario, parentesco}  
-			cpf referencia Empregado
+			***cpf referencia Empregado***  
 Departamento = {<ins>numero</ins>,<ins>nome</ins>, numEmpregados, localizacao, cpfGerente, dataInicio}  
-Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}
-		numeroDep referencia Departamento
-Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}
-		cpf referencia Empregado
-		numero referencia Projeto
-LocalDep = {<ins>numero</ins>, <ins>localizacao</ins>}
-		numero referencia Departamento
+Projeto = {<ins>numero</ins>,<ins>nome</ins>, localizacao, numeroDep}  
+		***numeroDep referencia Departamento***  
+Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}  
+		***cpf referencia Empregado***  
+		***numero referencia Projeto***  
+LocalDep = {<ins>numero</ins>, <ins>localizacao</ins>}  
+		***numero referencia Departamento***  
