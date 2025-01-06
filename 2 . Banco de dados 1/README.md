@@ -322,3 +322,19 @@ Trabalha = {<ins>cpf</ins>, <ins>numero</ins>, horas}
 		***numero referencia Projeto***  
 LocalDep = {<ins>numero</ins>, <ins>localizacao</ins>}  
 		***numero referencia Departamento***  
+
+
+
+## Exercícios práticos de fixação.
+
+### Prática 01
+
+![pratica01.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica01.png)
+
+Empregado(<ins>cpf</ins>, nome, endereço, salario)
+
+:nerd_face: No exercício pratico acima, foi definido no modelo conceitual a entidade "Empregado", com os atributos "cpf" como chave primaria, "nome", "endereço" e "salario", os quais for identificados no modelo lógico abaixo da imagem.
+
+### Prática 
+
+![pratica02.png](pratica02.png)
