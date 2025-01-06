@@ -335,6 +335,48 @@ Empregado(<ins>cpf</ins>, nome, endereço, salario)
 
 :nerd_face: No exercício pratico acima, foi definido no modelo conceitual a entidade "Empregado", com os atributos "cpf" como chave primaria, "nome", "endereço" e "salario", os quais for identificados no modelo lógico abaixo da imagem.
 
-### Prática 
+### Prática (Atributo Composto, e Multivalorado)
 
-![pratica02.png](pratica02.png)
+![pratica02.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica02.png)
+
+Empregado(<ins>cpf</ins>, nome, salario, rua, numero)
+telefone(<ins>cpf</ins>,<ins>numero</ins>)
+
+:nerd_face: No caso acima, temos o "endereço" como atributo composto, e "telefone" como atributo multivalorado, no caso, saiu o atributo "endereço", e foi adicionado os atributos "rua" é "numero", onde o conjunto dos 2, gera o endereço do empregado, e no caso do telefone, foi criado uma nova tabela, onde foi usado o atributo "cpf" para fazer a ligação da tabela pai com a tabela filho, fazendo a ligação entre o telefone e o empregado, e também "numero" que e o registro dos telefones.
+
+### Prática ( 1,1 )
+
+![pratica(1,1).png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica(1,1).png)
+
+Funcionario(<ins>cpf</ins>, nome, cargo)
+Identidade Funcional(<ins>cpf</ins>, dtEmissao, funcao, cpf)
+
+
+:nerd_face: No caso acima, temos um relacionamento de 1 para 1, onde foram definidos os atributos conforme imagem acima, porém, foi adicionado a entidade "Identidade Funcional" o atributo "cpf", para assim fazendo a identificação do funcionário com a identidade.
+
+### Prática (1,n)
+
+![pratica(1,n).png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica(1,n).png)
+
+pedido(<ins>numero</ins>)
+itens(<ins>FK_nrPedido</ins>,<ins>codigo</ins>, quantidade)
+	***FK_nrPedido referencia Pedido***
+
+:nerd_face: No caso do relacionamento 1 para muitos, na tabela que tem como máximo o n, criamos uma chave estrangeira que garante a ligação entre as 2 tabelas.
+
+### Prática ( n, n )
+
+![pratica(n,n).png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/pratica(n,n).png)
+
+Empregado (<ins>cpf</ins>, nome, salario, rua, numero)
+telefone(<ins>FK_cpf</ins>, <ins>numero</ins>)
+	***FK_cpf referencia Telefone***
+projeto(<ins>codigo</ins>, titulo)
+atividade(<ins>FK_cpf</ins>, <ins>FK_codProjeto</ins>, atividade)
+	***FK_cpf referencia Empregado***
+	***FK_codProjeto referencia Projeto***
+
+
+:nerd_face: Nesse caso, temos o relacionamento n para n, foi criado a entidade empregado, com a chave primaria "cpf", e também a entidade "projetos", com chave primaria "código",  devido ao atributo multivalorado presente no atributo "telefone" na entidade empregado, se cria uma nova entidade chamada telefone, que vai recebe uma chave estrangeira de empregado "FK_cpf", que faz referencia a entidade "empregado", e também o atributo "numero" que guarda o telefone do empregado.
+O relacionamento gera a tabela "atividade", onde ficará armazenado o valor do cpf do empregado, o codigo do projeto que ele esta participando e a atividade que esta sendo reaalizada.
+
