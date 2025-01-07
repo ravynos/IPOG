@@ -1,10 +1,9 @@
 # ADS IPOG
 
-Repositório criado para apresentar projetos e Anotações criados durante o curso de ADS da IPOG.
+#modelagemdedados
 
-1. Logica de Programação.
+# Modelagem de dados
 
-2. Banco de dados 1
 
 ![passos para modelagem de dados!](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/Passo%20para%20Modelagem%20de%20dados.png)
 
@@ -446,3 +445,75 @@ Matricula --> Departamento, Horário
 2335 --> {(Eletrodoméstico, Matutino), (Cama e Mesa, Vespertino)} **NÃO EXISTE DEPENDENCIA FUNCIONAL**
 3426 --> {(Eletrodoméstico, Integral)} **EXISTE DEPENDENCIA FUNCIONAL**
 2421 --> {(Cama e Mesa, Integral)} **EXISTE DEPENDENCIA FUNCIONAL**
+
+### Exercício prático
+
+Considere que uma tabela tem os atributos Matricula, Nome, Telefone, Endereço, Departamento, Horário, Salário.
+
+- A matrícula é única por vendedor e chave primária na tabela.
+- Podem existir vendedores homônimos (com o mesmo nome).
+- O telefone é único por vendedor
+- Pode ter dois vendedores morando em um mesmo endereço, mais um vendedor só tem um endereço.
+- Um vendedor só trabalha em um único horário por departamento.
+- Podemos ter vários vendedores num mesmo horário por departamento.
+- Os salários podem ser diferentes entre vendedores, mas um vendedor só tem um salário.
+- Os salários de vendedores de mesma categoria é o mesmo.
+
+	- Matricula --> Departamento, Horário = Existe Dependência
+	- Matricula --> Endereço = Existe Dependência
+	- Endereço --> Matricula = Não Existe Dependência
+	- Matricula --> Telefone, Endereço = Existe Dependência
+	- Departamento, Horário --> Matricula = Não Existe Dependência
+	- Departamento --> Matricula = Existe Dependência
+	- Matricula --> Departamento = Existe Dependência
+	- Matricula --> Salário = Existe Dependência
+	- Salário --> Matricula = Não Existe Dependência
+	- Salário --> Matricula, Departamento = Não Existe Dependência
+
+### Regras da dependência funcional
+
+
+| MATRICULA | NOME             | TELEFONE  | DEPARTAMENTO     | HORARIO    |
+| --------- | ---------------- | --------- | ---------------- | ---------- |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Eletrodomésticos | MATUTINO   |
+| 3426      | André Costa      | 9999-8882 | Eletrodomésticos | INTEGRAL   |
+| 2421      | João Sousa       | 9999-8883 | Cama e Mesa      | INTEGRAL   |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Cama e Mesa      | VERPERTINO |
+
+
+- Separação/Decomposição
+	Se A --> BC então
+		A -->B
+		A -->C
+Um exemplo dessa relação para os dados da tabela acima:
+
+Se
+Matricula --> Nome, Telefone então
+Matricula --> Nome
+Matricula --> Telefone
+
+- Acumulação
+	Se
+	A --> B então
+	AC --> B
+
+Um exemplo dessa relação para os dados da tabela acima?
+Se
+Matricula --> Nome então
+Matricula, Horário --> Nome
+
+- Transitividade
+	Se A --> B e B --> C então
+		A --> C
+Um Matricula --> Nome e Nome --> Telefone então
+	Matricula --> Telefone
+
+- Decomposição
+	Se A --> BC e BC --> D então
+		AC --> D
+
+
+## Normalização de dados
+
+### 1ª Forma Normal(1FN)
+
