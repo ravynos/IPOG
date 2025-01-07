@@ -378,5 +378,71 @@ atividade(<ins>FK_cpf</ins>, <ins>FK_codProjeto</ins>, atividade)
 
 
 :nerd_face: Nesse caso, temos o relacionamento n para n, foi criado a entidade empregado, com a chave primaria "cpf", e também a entidade "projetos", com chave primaria "código",  devido ao atributo multivalorado presente no atributo "telefone" na entidade empregado, se cria uma nova entidade chamada telefone, que vai recebe uma chave estrangeira de empregado "FK_cpf", que faz referencia a entidade "empregado", e também o atributo "numero" que guarda o telefone do empregado.
-O relacionamento gera a tabela "atividade", onde ficará armazenado o valor do cpf do empregado, o codigo do projeto que ele esta participando e a atividade que esta sendo reaalizada.
+O relacionamento gera a tabela "atividade", onde ficará armazenado o valor do cpf do empregado, o código do projeto que ele esta participando e a atividade que esta sendo realizada.
 
+### Dependência funcional
+
+- Conceito da matemática que estabelece uma relação entre os atributos de dois conjuntos.
+- Indicando que valores de um conjunto influenciam ou determinam os valores de um outro dentro de uma relação.
+
+	>Dados dois conjuntos A e B, diz-se que B é funcionamento dependente de A, ou A determina B, B depende de A, se cada valor de A estiver associado <ins>ca um é somente um valor de B</ins>.
+	Representado assim: A --> B
+
+![dependencia_funcional.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/dependencia_funcional.png)
+
+Podemos ver que cada matrícula está relacionada a um único nome
+
+2335 --> {Tomé Mascarenhas}
+3426 --> {André Costa}
+2421 --> {João Sousa}
+
+**EXISTE DEPENDÊNCIA FUNCIONAL**
+
+
+![sem_dependencia_fun.png](https://github.com/ravynos/IPOG/blob/main/2%20.%20Banco%20de%20dados%201/Banco%20de%20imagens/sem_dependencia_fun.png)
+
+
+2335 --> {Eletrodomésticos, Cama e Mesa}
+3426 --> {Eletrodomésticos}
+2421 --> {Cama Mesa}
+
+**NÃO EXISTE DEPENDÊNCIA FUNCIONAL**
+
+
+Conceito A --> B: B é funcionalmente dependente de A, ou A determina B para cada A está associado <ins>um e somente um valor</ins> de B.
+
+Vendedores
+
+| MATRICULA | NOME             | TELEFONE  | DEPARTAMENTO     |
+| --------- | ---------------- | --------- | ---------------- |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Eletrodomésticos |
+| 3426      | André Costa      | 9999-8882 | Eletrodomésticos |
+| 2421      | João Sousa       | 9999-8883 | Cama e Mesa      |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Cama e Mesa      |
+
+
+Matricula --> Nome
+**NOME** depende da **MATRICULA** do vendedor, existe uma relação um para um. Agora considere a dependência:
+
+Matricula --> Departamento
+Não existe dependência funcional clara entre **MATRICULA** e **DEPARTAMENTO**, pois **MATRICULA** pode pertencer a diferentes **DEPARTAMENTO** ao longo do tempo.
+**2335 --> {Eletrodoméstico, Cama e Mesa}
+
+Departamento --> Matricula
+
+A relação inversa também não existe. Isso porque um departamento determina mais de uma matrícula.
+**Eletrodomésticos --> {2335, 3426}**
+**Cama e Mesa --> {2421, 2335}**
+
+| MATRICULA | NOME             | TELEFONE  | DEPARTAMENTO     | HORARIO    |
+| --------- | ---------------- | --------- | ---------------- | ---------- |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Eletrodomésticos | MATUTINO   |
+| 3426      | André Costa      | 9999-8882 | Eletrodomésticos | INTEGRAL   |
+| 2421      | João Sousa       | 9999-8883 | Cama e Mesa      | INTEGRAL   |
+| 2335      | Tomé Mascarenhas | 9999-8888 | Cama e Mesa      | VERPERTINO |
+
+Matricula --> Departamento, Horário
+
+2335 --> {(Eletrodoméstico, Matutino), (Cama e Mesa, Vespertino)} **NÃO EXISTE DEPENDENCIA FUNCIONAL**
+3426 --> {(Eletrodoméstico, Integral)} **EXISTE DEPENDENCIA FUNCIONAL**
+2421 --> {(Cama e Mesa, Integral)} **EXISTE DEPENDENCIA FUNCIONAL**
