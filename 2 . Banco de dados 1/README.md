@@ -1,6 +1,5 @@
 # ADS IPOG
 
-[Modelagem de dados](#Modelagem de dados)
 
 # Modelagem de dados
 
@@ -516,4 +515,44 @@ Um Matricula --> Nome e Nome --> Telefone então
 ## Normalização de dados
 
 ### 1ª Forma Normal(1FN)
+
+### Anomalias de banco de dados mal modelado
+
+Quais problemas são decorrentes da relação Vendas?
+
+- Inclusão
+- Alteração
+- Exclusão
+
+| Nome_cliente | CPF | Endereço | Fone    | <ins>Cod_Produto</ins> | Nome_Produto | Valor_unitario | Quantidade | Total |
+| ------------ | --- | -------- | ------- | ---------------------- | ------------ | -------------- | ---------- | ----- |
+| José         | 111 | ABC      | 9923123 | A                      | Lápís        | 0,50           | 2          | 1,00  |
+| Ana          | 222 | XYZ      | 9111456 | B                      | Caneta       | 1,00           | 3          | 3,00  |
+| José         | 111 | ABC      | 9912123 | C                      | Régua        | 1,00           | 2          | 2,00  |
+| Pedro        | 444 | KZZ      | null    | D                      | Lápis        | 0,50           | 20         | 10,00 |
+
+- Inclusão:
+	- Redundância do cliente e do produto.
+
+		No caso do cliente "José" que aparece 2 vezes  e também do produto "Lápis", na tabela acima, ao fazer a inclusão, de uma nova venda, os dados citados anteriormente serão redundantes, podendo ser inclusos de formas diferentes, tornando os registros confusos.
+- Exclusão:
+	- Se o cliente "ANA" for eliminado a informação de que o produto B é chamado Caneta e custa R$ 1,00 é perdida.
+- Atualização:
+	- Uma mudança na descrição do produto A requer várias mudanças
+- Inconsistência: 
+	- Não há nada no projeto impedindo que o produto A tenha duas ou mais descrições diferentes.
+
+		Caso seja preciso mudar o nome do produto Lápis, ou o telefone do cliente "José", precisará ser alterado linha a linha, gerando inconsistência nos dados caso não seja feito dessa forma.
+
+### O que pode acontecer se uma modelagem for mal realizada.
+
+- Redundância de dados
+- Problemas de desempenho
+- Perda de dados
+
+Como evitar:
+
+- Modelo conceitual
+- Projeto Lógico
+- Normalização de dados
 
