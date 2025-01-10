@@ -556,3 +556,5 @@ Como evitar:
 - Projeto Lógico
 - Normalização de dados
 
+[!IMPORTANT]
+Devido a problemas com a plataforma do curso, esse modulo foi encerrado prematuramente.
