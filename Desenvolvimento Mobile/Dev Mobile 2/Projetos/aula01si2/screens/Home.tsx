@@ -1,15 +1,11 @@
 import React from "react";
 import { View, Text, Image, FlatList, TouchableOpacity, Dimensions } from "react-native";
+import faceData from "../services/ChatFaceData";
+import 
 
 export default function Home(){
 
-    const selectedChatFace = {
-        id:2,
-        name:'Pogu',
-        image: 'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_21_2e18bb4a61.png',
-        primary: '#E53057',
-        secondary:''
-    }
+
 
     return(
         <View style={{ alignItems: 'center', paddingTop: 90 }}>
