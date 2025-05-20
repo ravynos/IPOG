@@ -1,6 +1,6 @@
 # Definição de projeto
 
-	Um projeto é um esforço temporário que tem como finalidade um resultado único e possui recursos delimitados. Um projeto pode ser social, pessoal, cultural, empresarial ou de pesquisa.
+Um projeto é um esforço temporário que tem como finalidade um resultado único e possui recursos delimitados. Um projeto pode ser social, pessoal, cultural, empresarial ou de pesquisa.
 
 - É único
 - Tem limitação de recursos
@@ -20,9 +20,9 @@
 
 # Qual a diferença entre um projeto e um processo?
 
-	De forma resumida, **a principal diferença entre projetos e processos é que, enquanto um processo é contínuo, e repetido inúmeras vezes, os projetos são temporários e realizados uma única vez.**
+De forma resumida, **a principal diferença entre projetos e processos é que, enquanto um processo é contínuo, e repetido inúmeras vezes, os projetos são temporários e realizados uma única vez.**
 
-	Mesmo que alguns procedimentos sejam repetidos no projeto, a repetição não muda o fato de que as suas entregas sejam únicas.
+Mesmo que alguns procedimentos sejam repetidos no projeto, a repetição não muda o fato de que as suas entregas sejam únicas.
 
 Processos: São cíclicos e repetitivos
 Projetos: Possuem Início>Meio>Fim
