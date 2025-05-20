@@ -1,0 +1,19 @@
+<!-- Interpolação -->
+
+<h1>Hello, {{ title }}</h1>
+<h2>{{message}}</h2>
+<!--Property Binding  -->
+<img [src]="'https://angular.io/assets/images/logos/angular/angular.svg'"
+alt="Descrição da imagem" width="100"/>
+
+<!-- Event Binding -->
+ <button (click)="updateMessage()">Clicar</button>
+
+<!-- Tow Way Data Binding -->
+ <input [(ngModel)]="inputValue" placeholder="Digite um valor">
+<input type="text" value="{{inputValue}}" >
+
+
+<!-- Rotas do angular -->
+<router-outlet />
+
