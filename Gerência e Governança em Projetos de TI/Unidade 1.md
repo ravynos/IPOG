@@ -111,3 +111,46 @@ Lembre-se: o que não é conhecido, não e utilizado! Não adianta ter um modelo
 
 O **planejamento de um projeto** não termina no preenchimento do modelo. Cada projeto é diferente e o modelo é apenas um guia. Tudo deve ser **revisto e monitorado** para que esteja o mais **adequado** possível ao novo desafio que a equipe vai enfrentar. Ah, e se for necessário não hesite em fazer **ajustes.** O modelo de projeto deve ser flexível, não uma camisa de força!
 
+# Fatores de sucesso ou fracasso de um projeto
+
+## Sucesso
+
+**Envolvimento efetivo dos usuário:** A participação ativa dos usuários finais durante todo o projeto é crucial para o sucesso do projeto.
+
+**Apoio da alta gestão:** O patrocínio executivo e o apoio da alta gestão são fundamentais para garantir a alocação de recursos e a priorização do projeto.
+
+**Objetivos claros:** Ter objetivos de negócios bem definidos ajuda a orientar o projeto e a manter todos na mesma página.
+
+**S** - Specific (Específico):  Saber o que se quer especificamente.
+**M** - Measurable (Mensurável): Como alcançar, os passos.
+**A** - Attainable (Alcançável) - Possível de ser alcançado por você.
+**R** - Relevant (Realista) - Aspectos socioeconômicos, habilidades.
+**T** - Time Based (Tempo) -Se impor um prazo realista.
+
+**Maturidade emocional:** A capacidade de gerenciar as emoções e manter um ambiente de trabalho positivo é essencial.
+
+**Adoção de uma metodologia adequada:** A utilização de uma metodologia de gestão de projetos adequada pode ajudar a estruturar o projeto e a garantir que todas as partes importantes sejam  consideradas.
+
+# Fracasso
+
+**Falta de envolvimento dos usuários:** Se os usuários finais não estiverem envolvidos ou não compreendem o projeto, é provável que ele não seja bem sucedido.
+
+**Decisões de investimento equivocadas:** Projetos de TI podem falhar quando as decisões de investimento não são bem fundamentadas. è essencial considerar todas as partes interessadas e buscar um equilíbrio entre suas expectativas.
+
+**Falta de planejamento e estratégia:** A ausência de um planejamento sólido e uma estratégia clara pode comprometer o sucesso do projeto.
+Defina objetivos alinhados com a estratégia da empresa e identifique as necessidades e recursos necessários.
+
+**Escolha da metodologia de gestão de projetos:** A seleção da metodologia de gestão de projetos é crucial. Existem várias opções como PMBOK, SRUM E PRINCE2. Escolha a mais adequada para o projeto e a organização.
+
+- Escolha uma metodologia de gestão de projetos
+- Monitore os indicadores do projeto constantemente.
+- Faça revisões no planejamento quando necessário.
+- Invista em profissionais qualificados.
+- Utilize um software de gestão de projetos.
+
+**Equipe qualificada:** Contar com uma equipe competente e comprometida é essencial. Selecione profissionais com as habilidades necessárias e ofereça treinamento quando necessário.
+
+**Teste e validações:** Antes da implementação, realize testes abrangentes para garantir que tudo funcione corretamente. Envolver todas as partes interessadas nessa fase é importante para obter feedback e fazer ajustes necessário.
+
+**Implementação cuidadosa:** Após os testes, implemente o projeto com preparação para lidar com possíveis problemas. Acompanhe o progresso e ajuste conforme necessário.
+
