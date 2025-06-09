@@ -114,3 +114,80 @@ O gerenciamento da qualidade do projeto, conforme o guia PMBOK, é uma área de 
 - **Gerenciar a qualidade:** Traduz os requisitos de qualidade do plano de gerenciamento da qualidade em critérios de auditoria para o trabalho do projeto e os produtos do projeto.
 
 - **Controlar a qualidade:** Monitora e registra os resultados da execução das atividades de qualidade para avaliar o desempenho e recomendar as mudanças necessárias.
+
+### Gerenciamento dos recursos humanos
+
+O Gerenciamento dos recursos humanos do projeto, conforme o guia PMBOK, é uma área de conhecimento que envolve os processos necessários  para **planejar, estimar, mobilizar, desenvolver e gerenciar a equipe do projeto.**
+
+>[!note]
+>O objetivo é garantir que os recursos humanos necessários para o projeto sejam adequadamente planejados, e adquiridos, desenvolvidos e gerenciados.
+
+#### Os processos de gerenciamento dos recursos incluem:
+
+- **Planejar o gerenciamento dos recursos:** Identifica e documenta as opções, ações e responsabilidade associadas ao gerenciamento dos recursos do projeto.
+
+- **Estimar os recursos das atividades:** Estima o tipo e as quantidades de recursos necessários para realizar cada atividade do projeto.
+
+- **Adquirir recursos:** Obtém os recursos necessários para completar as atividades do projeto.
+
+- **Desenvolver a equipe:** Melhora as competências e a interação dos membros da equipe para aprimorar o desempenho do projeto.
+
+- **Gerenciar a Equipe:** Acompanha o desempenho da equipe, fornece feedback, resolve problemas e coordena mudanças para melhorar o desempenho do projeto.
+
+- **Controlar os recursos:** Garante que os recursos físicos e humanos atribuídos e alocados estejam disponível conforme planejado, monitora p uso de recursos e realiza as mudanças necessárias.
+
+### Gerenciamento das comunicações
+
+O gerenciamento das comunicações do projeto, conforme o guia PMBOK, é uma área de conhecimento que envolve os processos necessários para assegurar que as informações do projeto sejam **geradas, coletadas, distribuídas, armazenadas, recuperadas e organizadas de maneira oportuna e apropriada.**
+
+>[!note]
+>O objetivo principal é conectar as diversas partes interessadas, fornecer as ligações críticas entre pessoas e informações necessárias para comunicações bem-sucedidas, e manter as partes interessadas "alinhadas".
+
+#### Os processos de gerenciamento das comunicações incluem:
+
+1. **Planejar o gerenciamento das comunicações:** Identifica e documenta as necessidades de informação das partes interessadas e aborda como as comunicações serão gerenciadas e controladas.
+
+2. **Gerenciar as comunicações:**  Cria, coleta, distribui, armazena, recupera e destina a disposição final das informações do projeto de maneira oportuna e apropriada.
+
+3. **Monitorar as comunicações:** Garante que as necessidades de informação das partes interessadas sejam atendidas durante todo o ciclo de vida do projeto.
+
+### Gerenciamento dos riscos
+
+O gerenciamento dos riscos do projeto, conforme guia PMBOK, é uma área de conhecimento que envolve os processos necessários para **planejar, identificar, analisar , responder, monitor e controlar os riscos de um projeto.**
+
+>[!note]
+>O objetivo é aumentar a probabilidade e o impacto dos eventos positivos e reduzir a probabilidade e o impacto dos eventos negativos nos objetos do projeto.
+
+#### Os processos de gerenciamento de riscos incluem:
+
+- **Planejar o gerenciamento dos Riscos:** Define como conduzir as atividades de gerenciamento dos riscos para um projeto.
+
+- **Identificar os riscos:** Determina quais riscos podem afetar o projeto e documenta suas características.
+
+- **Realizar a análise qualitativa dos riscos:** Priorizar os riscos para análise ou ação adicional através da avaliação e combinação de suas probabilidades de ocorrência e impacto.
+
+- **Realizar a análise quantitativa dos riscos:** Analisa numericamente o efeito dos riscos identificados nos objetivos gerais do projeto.
+
+- **Planejar respostas aos riscos:** Desenvolve opções e ações para aumentar as oportunidades e reduzir as ameaças aos objetivos do projeto,
+
+- **Implementar respostas aos riscos:** Implementa as respostas aos riscos acordadas e selecionadas.
+
+- **Monitorar os riscos:** Monitora a implementação das respostas aos riscos, rastreia os riscos identificados, identifica e analisa novos riscos e avalia a eficácia do processo de tratamento dos riscos durante todo o projeto.
+
+### Gerenciamento das aquisições
+
+O gerenciamento das aquisições, conforme guia PMBOK, é uma área de conhecimento que envolve os processo necessários pra **comprar ou adquirir produtos, serviços ou resultados externos ao projeto.**
+
+>[!note]
+>O objetivo é garantir que o projeto obtenha os recursos necessários para ser concluído com sucesso.
+
+#### Os processos de gerenciamento das aquisições incluem: 
+
+- **Planejar o gerenciamento das aquisições:** Determina o que comprar, quando e como.
+
+- **Conduzir as aquisições:** Obtém respostas dos fornecedores, seleciona um fornecedor e concede um contrato.
+
+- **Controlar as aquisições:** Gerencia as relações de aquisição, monitora o desempenho do contrato e faz mudanças e correções conforme necessário.
+
+- **Encerrar as aquisições:** Completa e liquida cada contrato, incluindo a resolução de qualquer item aberto.
+
