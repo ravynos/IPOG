@@ -8,9 +8,7 @@ import com.example.biblioteca.service.BibliotecaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class BibliotecaController {
@@ -28,8 +26,13 @@ public class BibliotecaController {
     }
 
     @PostMapping("/cadastrar")
-    public ResponseEntity<?> cadastrar(BibliotecaModel bibliotecaModel){
-        return bibliotecaService.cadastrar(bibliotecaModel);
+    public ResponseEntity<?> cadastrar(@RequestBody BibliotecaModel bibliotecaModel){
+        return bibliotecaService.cadastrarAlterar(bibliotecaModel, "cadastrar");
+    }
+
+    @PutMapping("/alterar")
+    public ResponseEntity<?> alterar(@RequestBody BibliotecaModel bibliotecaModel){
+        return bibliotecaService.cadastrarAlterar(bibliotecaModel, "alterar");
     }
 
     @GetMapping("")

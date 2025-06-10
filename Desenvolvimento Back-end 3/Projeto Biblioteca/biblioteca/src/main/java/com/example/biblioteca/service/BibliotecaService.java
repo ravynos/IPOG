@@ -21,8 +21,8 @@ public class BibliotecaService {
         return bibliotecaRepository.findAll();
     }
 
-    //Metodo para cadastar livros
-    public ResponseEntity<?> cadastrar(BibliotecaModel bibliotecaModel) {
+    //Metodo para cadastar ou alterar livros
+    public ResponseEntity<?> cadastrarAlterar(BibliotecaModel bibliotecaModel, String acao) {
 
         if (bibliotecaModel.getTitulo().equals("")) {
             respostaModel.setMensagem("O título do livro e obrigatório");
@@ -37,7 +37,11 @@ public class BibliotecaService {
             respostaModel.setMensagem("O genero do livro e obrigatório");
             return new ResponseEntity<>(respostaModel, HttpStatus.BAD_REQUEST);
         } else {
-            return new ResponseEntity<>(bibliotecaRepository.save(bibliotecaModel), HttpStatus.CREATED);
+            if(acao.equals("cadastrar")){
+                return new ResponseEntity<>(bibliotecaRepository.save(bibliotecaModel), HttpStatus.CREATED);
+            } else {
+                return new ResponseEntity<>(bibliotecaRepository.save(bibliotecaModel), HttpStatus.OK);
+            }
         }
     }
 }
