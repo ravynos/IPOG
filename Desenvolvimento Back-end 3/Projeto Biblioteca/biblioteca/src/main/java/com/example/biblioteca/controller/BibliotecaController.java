@@ -6,7 +6,6 @@ import com.example.biblioteca.model.RespostaModel;
 import com.example.biblioteca.repository.BibliotecaRepository;
 import com.example.biblioteca.service.BibliotecaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +32,11 @@ public class BibliotecaController {
     @PutMapping("/alterar")
     public ResponseEntity<?> alterar(@RequestBody BibliotecaModel bibliotecaModel){
         return bibliotecaService.cadastrarAlterar(bibliotecaModel, "alterar");
+    }
+
+    @DeleteMapping("/remover/{id}")
+    public ResponseEntity<RespostaModel> excluir(@PathVariable Long id){
+        return bibliotecaService.excluir(id);
     }
 
     @GetMapping("")

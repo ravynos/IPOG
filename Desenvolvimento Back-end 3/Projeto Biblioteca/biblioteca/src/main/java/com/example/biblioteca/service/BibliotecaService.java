@@ -44,4 +44,11 @@ public class BibliotecaService {
             }
         }
     }
+
+    //Metodo para remover livros
+    public ResponseEntity<RespostaModel> excluir(Long id) {
+        bibliotecaRepository.deleteById(id);
+        respostaModel.setMensagem("Livro removido!");
+        return new ResponseEntity<>(respostaModel, HttpStatus.OK);
+    }
 }
